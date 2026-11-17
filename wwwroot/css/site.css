@@ -1,0 +1,135 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* ===== Blue theme ===== */
+:root {
+  --blue-900: #0b2a5b;
+  --blue-700: #1250b0;
+  --blue-600: #1b6ec2;
+  --blue-500: #2f86e0;
+  --blue-100: #e3f0fd;
+  --blue-50: #f3f8fe;
+}
+
+body {
+  background-color: var(--blue-50);
+  color: #1c2b40;
+}
+
+a {
+  color: var(--blue-600);
+}
+a:hover {
+  color: var(--blue-700);
+}
+
+h1, h2, h3, h4 {
+  color: var(--blue-900);
+}
+
+/* Navbar */
+.navbar.bg-blue {
+  background: linear-gradient(90deg, var(--blue-900), var(--blue-600));
+}
+.navbar.bg-blue .navbar-brand,
+.navbar.bg-blue .nav-link {
+  color: #fff;
+}
+.navbar.bg-blue .nav-link:hover,
+.navbar.bg-blue .nav-link:focus {
+  color: var(--blue-100);
+}
+.navbar.bg-blue .navbar-toggler {
+  border-color: rgba(255, 255, 255, .5);
+}
+.navbar.bg-blue .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Buttons */
+.btn-primary,
+.btn-success {
+  color: #fff;
+  background-color: var(--blue-600);
+  border-color: var(--blue-700);
+}
+.btn-primary:hover,
+.btn-success:hover,
+.btn-primary:focus,
+.btn-success:focus {
+  color: #fff;
+  background-color: var(--blue-700);
+  border-color: var(--blue-900);
+}
+.btn-secondary {
+  color: var(--blue-700);
+  background-color: #fff;
+  border-color: var(--blue-500);
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus, .form-select:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem var(--blue-500);
+  border-color: var(--blue-500);
+}
+
+/* Tables */
+.table thead.table-blue th {
+  background-color: var(--blue-600);
+  color: #fff;
+  border-color: var(--blue-700);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: var(--blue-50);
+}
+.table-hover > tbody > tr:hover > * {
+  background-color: var(--blue-100);
+}
+.table-responsive {
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 .25rem .75rem rgba(18, 80, 176, .12);
+}
+
+/* Badges, alerts, forms */
+.badge.bg-primary {
+  background-color: var(--blue-600) !important;
+}
+.alert-info {
+  color: var(--blue-900);
+  background-color: var(--blue-100);
+  border-color: #b9d8f7;
+}
+.form-control, .form-select {
+  border-color: #b9d8f7;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--blue-900);
+  color: var(--blue-100) !important;
+  border-top: none !important;
+}
+.footer a {
+  color: #fff;
+}
